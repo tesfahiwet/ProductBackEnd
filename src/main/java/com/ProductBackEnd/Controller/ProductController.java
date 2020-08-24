@@ -1,24 +1,15 @@
 package com.ProductBackEnd.Controller;
 
+import com.ProductBackEnd.Exception.InvalidInputException;
+import com.ProductBackEnd.Model.*;
+import com.ProductBackEnd.Repository.ProductRepo;
+import com.ProductBackEnd.Service.ProductService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
-import com.ProductBackEnd.Exception.InvalidInputException;
-import com.ProductBackEnd.Model.Location;
-import com.ProductBackEnd.Model.NearestLocation;
-import com.ProductBackEnd.Model.Product;
-import com.ProductBackEnd.Model.ProductBalanace;
-import com.ProductBackEnd.Model.ProductBalanceIn;
-import com.ProductBackEnd.Model.Zip_codes;
-import com.ProductBackEnd.Proxy.ProductBean;
-import com.ProductBackEnd.Repository.ProductRepo;
-import com.ProductBackEnd.Service.ProductService;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -72,5 +72,6 @@ public class Product {
                 ", deptid='" + deptid + '\'' +
                 ", name='" + deptname + '\'' +
                 '}';
+
     }
 }

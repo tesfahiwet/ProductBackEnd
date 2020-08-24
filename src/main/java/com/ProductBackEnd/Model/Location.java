@@ -53,5 +53,6 @@ public class Location {
                 ", locationname='" + locationname + '\'' +
                 ", ZibCode='" + zip_code + '\'' +
                 '}';
+      //  return String.format("Location[%d,%s,%s,%s,%s]",locationId,locationname,zip_code);
     }
 }
