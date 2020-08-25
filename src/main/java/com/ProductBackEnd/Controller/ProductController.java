@@ -99,5 +99,9 @@ logger.info("{}",Pb.getLocation());
     	zc.add(z); zc.add(z1); zc.add(z2); 
     	n.setZip_codes(zc);
         return n;
-    }  
+    }
+    @GetMapping("/hello")
+    public String  helloWorld()  {
+        return "hello world from my application";
+    }
 }
